@@ -1,0 +1,12 @@
+#This is logic of finding sum of elements of diadonals in matrix
+#       [ a11  a12  a13]
+# arr = [ a21  a22  a23]
+#       [ a31  a32  a33]
+
+
+for i in range(0,len(arr)):
+        for j in range(0,len(arr)):
+            if(i==j):
+                s1=s1+arr[i][j]     #[ a11 + a22 + a33]
+            if(i==len(arr)-j-1):
+                s2=s2+arr[i][j]     #[ a13 + a22 + a31]
